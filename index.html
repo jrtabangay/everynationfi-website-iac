@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>Every Nation Finland | Under Maintenance</title>
+    <title>Every Nation Finland | Under Construction</title>
     <style>
         :root {
             color-scheme: light;
             --ink: #172033;
             --muted: #5d6678;
-            --accent: #d65a31;
+            --accent: #004a98;
+            --warm: #d65a31;
             --paper: #f8f6f1;
             --panel: #ffffff;
         }
@@ -46,15 +47,17 @@
             display: block;
             width: min(100%, 360px);
             height: auto;
-            margin: 0 auto 28px;
+            margin: 0 auto 10px;
         }
 
-        .eyebrow {
-            margin: 0 0 16px;
+        .country-wordmark {
+            margin: 0 0 24px;
             color: var(--accent);
-            font-size: 0.78rem;
-            font-weight: 700;
-            letter-spacing: 0.12em;
+            font-family: "Arial Black", Impact, Arial, Helvetica, sans-serif;
+            font-size: clamp(1.4rem, 6vw, 2.5rem);
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            line-height: 1;
             text-transform: uppercase;
         }
 
@@ -73,8 +76,105 @@
             line-height: 1.7;
         }
 
-        a {
+        .lead {
+            font-size: 1.1rem;
+        }
+
+        .service {
+            display: grid;
+            gap: 10px;
+            width: min(100%, 420px);
+            margin: 28px auto 0;
+            padding: 20px;
+            border: 1px solid rgba(23, 32, 51, 0.1);
+            border-radius: 8px;
+            background: rgba(248, 246, 241, 0.7);
+            color: var(--ink);
+            text-align: left;
+        }
+
+        .service h2 {
+            margin: 0 0 4px;
             color: var(--accent);
+            font-size: 1.1rem;
+            letter-spacing: 0;
+        }
+
+        .service p {
+            margin: 0;
+            color: var(--ink);
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin: 30px 0 0;
+        }
+
+        .social-link {
+            display: grid;
+            place-items: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(23, 32, 51, 0.16);
+            text-decoration: none;
+        }
+
+        .facebook-icon {
+            display: grid;
+            place-items: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #1877f2;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.1rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .instagram-icon {
+            position: relative;
+            display: block;
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: radial-gradient(circle at 30% 110%, #fdf497 0 18%, #fd5949 42%, #d6249f 62%, #285aeb 100%);
+        }
+
+        .instagram-icon::before {
+            content: "";
+            position: absolute;
+            inset: 11px;
+            border: 4px solid #ffffff;
+            border-radius: 10px;
+        }
+
+        .instagram-icon::after {
+            content: "";
+            position: absolute;
+            top: 17px;
+            left: 17px;
+            width: 14px;
+            height: 14px;
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+            background: transparent;
+            box-shadow: 10px -10px 0 -4px #ffffff;
+        }
+
+        a {
+            color: var(--warm);
             font-weight: 700;
             text-decoration: none;
         }
@@ -87,10 +187,26 @@
 <body>
     <main>
         <img class="logo" src="assets/en-logo.png" alt="Every Nation">
-        <p class="eyebrow">Every Nation Finland</p>
-        <h1>Website Under Maintenance</h1>
-        <p>We are making a few updates and will be back online soon.</p>
-        <p>For urgent inquiries, email <a href="mailto:info@everynation.fi">info@everynation.fi</a>.</p>
+        <p class="country-wordmark">Finland</p>
+        <h1>Website Under Construction</h1>
+        <p class="lead">Our website is still being built, but our community is already alive and growing. You're welcome to join us this Sunday.</p>
+
+        <section class="service" aria-label="Sunday service details">
+            <h2>Sunday Service</h2>
+            <p><strong>Address:</strong> Kissanmankatu 20B (Common Room), Tampere</p>
+            <p><strong>Time:</strong> 13:00</p>
+        </section>
+
+        <div class="social-links" aria-label="Social media links">
+            <a class="social-link" href="https://www.facebook.com/profile.php?id=61566502566762" target="_blank" rel="noopener" aria-label="Facebook">
+                <span class="facebook-icon" aria-hidden="true">f</span>
+            </a>
+            <a class="social-link" href="https://www.instagram.com/entampere" target="_blank" rel="noopener" aria-label="Instagram">
+                <span class="instagram-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <p>For inquiries, email <a href="mailto:entampere@gmail.com">entampere@gmail.com</a>.</p>
     </main>
 </body>
 </html>
