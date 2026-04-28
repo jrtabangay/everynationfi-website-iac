@@ -1,0 +1,86 @@
+name: Deploy Website to AWS
+
+on:
+  push:
+    branches: [main, production]
+  pull_request:
+    branches: [main, production]
+
+env:
+  AWS_REGION: eu-west-1
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run linter
+        run: npm run lint
+
+      - name: Build website
+        run: npm run build
+
+      - name: Export static files
+        run: npm run export
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.14.9
+
+      - name: Terraform Init
+        working-directory: ./infrastructure
+        run: terraform init
+
+      - name: Terraform Plan
+        working-directory: ./infrastructure
+        run: terraform plan -out=tfplan
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Terraform Apply
+        working-directory: ./infrastructure
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: terraform apply -auto-approve tfplan
+
+      - name: Get S3 bucket name
+        working-directory: ./infrastructure
+        id: s3_bucket
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: echo "bucket=$(terraform output -raw s3_bucket_name)" >> $GITHUB_OUTPUT
+
+      - name: Deploy to S3
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          aws s3 sync out/ s3://${{ steps.s3_bucket.outputs.bucket }}/ --delete
+
+      - name: Get CloudFront distribution ID
+        working-directory: ./infrastructure
+        id: cloudfront
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: echo "distribution_id=$(terraform output -raw cloudfront_distribution_id)" >> $GITHUB_OUTPUT
+
+      - name: Invalidate CloudFront cache
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ steps.cloudfront.outputs.distribution_id }} --paths "/*"
+
+      - name: Get CloudFront domain
+        working-directory: ./infrastructure
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: echo "Website deployed to: $(terraform output -raw cloudfront_domain_name)"

@@ -1,0 +1,23 @@
+# Operating System
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# OS Files
+desktop.ini
+.directory
+
+# Environment
+.env
+.env.local
+
+# Build outputs (if needed later)
+dist/
+build/
