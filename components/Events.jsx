@@ -17,7 +17,7 @@ export default function Events() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {events.map((event) => (
             <div key={event.title} className="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
-              <a href={event.image} target="_blank" rel="noopener noreferrer" aria-label={`Open full image for ${event.title}`}>
+              <a href={event.image} aria-label={`Open full image for ${event.title}`}>
                 <img src={event.image} alt={event.title} className="w-full h-72 object-cover cursor-zoom-in" />
               </a>
               <div className="p-6">
