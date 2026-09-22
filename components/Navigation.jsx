@@ -11,8 +11,9 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold gradient-text">
-              Every Nation Finland
+            <Link href="/" className="flex items-center">
+              <img src="/branding/entlogo.webp" alt="Every Nation Tampere" className="h-12 w-12 rounded-full object-cover" />
+              <span className="ml-3 text-lg font-bold text-primary">Every Nation Finland RY</span>
             </Link>
           </div>
 
@@ -31,7 +32,7 @@ export default function Navigation() {
               <Link href="#events" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition">
                 Events
               </Link>
-              <Link href="#contact" className="px-3 py-2 rounded-md text-sm font-medium bg-secondary text-white hover:bg-orange-600 transition">
+              <Link href="#contact" className="px-3 py-2 rounded-md text-sm font-medium bg-secondary text-white hover:bg-primary transition">
                 Contact Us
               </Link>
             </div>

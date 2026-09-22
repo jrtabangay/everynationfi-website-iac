@@ -11,7 +11,7 @@ export default function Hero() {
               Christ-centered, Spirit-empowered, and socially responsible churches across Finland. Reaching every campus and every city.
             </p>
             <div className="flex gap-4">
-              <a href="#locations" className="bg-secondary hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition">
+              <a href="#locations" className="bg-secondary hover:bg-primary text-white px-8 py-3 rounded-lg font-semibold transition">
                 Find Your Church
               </a>
               <a href="#contact" className="border-2 border-white hover:bg-white hover:text-primary text-white px-8 py-3 rounded-lg font-semibold transition">
@@ -20,7 +20,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="hidden md:block">
-            <div className="bg-gradient-to-br from-secondary to-orange-500 rounded-lg h-96 flex items-center justify-center">
+            <div className="bg-secondary rounded-lg h-96 flex items-center justify-center">
               <div className="text-center">
                 <div className="text-6xl font-bold mb-4">Every Nation</div>
                 <div className="text-2xl">Every Nation Finland RY</div>

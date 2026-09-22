@@ -25,11 +25,11 @@ export default function Campus() {
                 <span className="text-gray-700">Community outreach and evangelism</span>
               </li>
             </ul>
-            <button className="bg-secondary hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition">
+            <button className="bg-secondary hover:bg-primary text-white px-8 py-3 rounded-lg font-semibold transition">
               Join Campus Ministry
             </button>
           </div>
-          <div className="bg-gradient-to-br from-secondary to-orange-500 rounded-lg h-96 flex items-center justify-center shadow-lg">
+          <div className="bg-secondary rounded-lg h-96 flex items-center justify-center shadow-lg">
             <div className="text-center text-white">
               <div className="text-6xl font-bold mb-4">🎓</div>
               <div className="text-2xl font-bold">Campus Ministry</div>

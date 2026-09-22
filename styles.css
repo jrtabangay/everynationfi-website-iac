@@ -17,9 +17,9 @@ body {
 /* Variables */
 :root {
     --primary: #000000;
-    --secondary: #b3152c;
+    --secondary: #2410b8;
     --accent: #ffffff;
-    --gold: #fcb414;
+    --gold: #2410b8;
     --light-gray: #f7f7f7;
     --medium-gray: #cccccc;
     --text-gray: #404040;
@@ -816,6 +816,10 @@ h3,
 }
 
 .event-image { width: 100%; object-fit: cover; }
+
+.logo { display: flex; align-items: center; gap: 0.75rem; color: #000000; }
+.logo img { width: 2.75rem; height: 2.75rem; border-radius: 50%; object-fit: cover; }
+.hero-logo { width: 12rem; height: 12rem; border-radius: 50%; object-fit: cover; }
 
 .event-poster { display: block; cursor: zoom-in; }
 .event-lightbox { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 1rem; background: rgba(0, 0, 0, 0.8); cursor: zoom-out; }

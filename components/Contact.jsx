@@ -45,13 +45,13 @@ export default function Contact() {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-white rounded-lg p-8 text-center shadow-md">
             <h3 className="text-lg font-bold mb-2">Email</h3>
-            <a href="mailto:vince.bitana@everynation.fi" className="text-secondary hover:text-orange-600 transition">
+            <a href="mailto:vince.bitana@everynation.fi" className="text-secondary hover:text-primary transition">
               vince.bitana@everynation.fi
             </a>
           </div>
           <div className="bg-white rounded-lg p-8 text-center shadow-md">
             <h3 className="text-lg font-bold mb-2">Phone</h3>
-            <a href="tel:+358505123876" className="text-secondary hover:text-orange-600 transition">
+            <a href="tel:+358505123876" className="text-secondary hover:text-primary transition">
               +358 50 512 3876
             </a>
           </div>
@@ -119,7 +119,7 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="w-full bg-secondary hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition"
+              className="w-full bg-secondary hover:bg-primary text-white px-8 py-3 rounded-lg font-semibold transition"
             >
               Send Message
             </button>
