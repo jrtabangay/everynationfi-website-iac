@@ -23,7 +23,7 @@ export default function Hero() {
             <div className="bg-gradient-to-br from-secondary to-orange-500 rounded-lg h-96 flex items-center justify-center">
               <div className="text-center">
                 <div className="text-6xl font-bold mb-4">Every Nation</div>
-                <div className="text-2xl">Finland</div>
+                <div className="text-2xl">Every Nation Finland RY</div>
               </div>
             </div>
           </div>
