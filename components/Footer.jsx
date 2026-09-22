@@ -74,6 +74,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <div>
               <p>© 2026 Every Nation Finland. All rights reserved.</p>
+              <p className="mt-2 font-bold text-white">Every Nation Finland RY (Y-tunnus: 3641711-5)</p>
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="hover:text-secondary transition">Privacy Policy</Link>
