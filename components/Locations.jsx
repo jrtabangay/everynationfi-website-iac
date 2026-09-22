@@ -17,7 +17,7 @@ export default function Locations() {
               <h3 className="text-xl font-bold text-primary mb-2">{city.name}</h3>
               <p className="text-secondary font-semibold mb-3">{city.tagline}</p>
               <p className="text-gray-600 text-sm mb-4">{city.region}</p>
-              <button className="text-secondary font-semibold hover:text-orange-600 transition">
+              <button className="text-secondary font-semibold hover:text-primary transition">
                 Learn More
               </button>
             </div>
@@ -28,7 +28,7 @@ export default function Locations() {
           <p className="text-gray-600 text-lg mb-6">
             Every Nation Finland is actively reaching campuses and communities in Tampere.
           </p>
-          <button className="bg-secondary hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition">
+          <button className="bg-secondary hover:bg-primary text-white px-8 py-3 rounded-lg font-semibold transition">
             Connect in Tampere
           </button>
         </div>

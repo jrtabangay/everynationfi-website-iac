@@ -16,7 +16,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <div class="logo">Every Nation Finland</div>
+                <div class="logo"><img src="public/branding/entlogo.webp" alt="Every Nation Tampere"><span>Every Nation Finland RY</span></div>
                 <button class="menu-toggle" id="menuToggle">Menu</button>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#about">About</a></li>
@@ -42,8 +42,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="hero-box">
-                        <h2>Every Nation</h2>
-                        <p>Every Nation Finland RY</p>
+                        <img src="public/branding/entlogo.webp" alt="Every Nation Tampere" class="hero-logo">
                     </div>
                 </div>
             </div>
@@ -158,39 +157,39 @@
 
             <div class="events-grid">
                 <div class="event-card">
-                    <img class="event-image" src="public/events/coffee-life-talk.jpg" alt="Coffee Life Talk">
+                    <a href="public/events/coffee-life-talk.jpg" class="event-poster"><img class="event-image" src="public/events/coffee-life-talk.jpg" alt="Coffee Life Talk"></a>
                     <div class="event-type">Community</div>
                     <h3>Coffee Life Talk</h3>
-                    <div class="event-detail">July 25, 2026 Â· 13:00â€“16:00</div>
+                    <div class="event-detail">Every last Saturday of the month · 13:00–16:00</div>
                     <div class="event-detail">Kissanmaankatu 20B, Common Room</div>
                 </div>
                 <div class="event-card">
-                    <img class="event-image" src="public/events/prayer-meeting.jpg" alt="Online Prayer Meeting">
+                    <a href="public/events/prayer-meeting.jpg" class="event-poster"><img class="event-image" src="public/events/prayer-meeting.jpg" alt="Online Prayer Meeting"></a>
                     <div class="event-type">Prayer</div>
                     <h3>Online Prayer Meeting</h3>
-                    <div class="event-detail">July 18, 2026 Â· 17:00</div>
+                    <div class="event-detail">Every Saturday · 17:00–18:00</div>
                     <div class="event-detail">Online Â· Google Meet link will be shared</div>
                 </div>
                 <div class="event-card">
-                    <img class="event-image" src="public/events/unplugged.jpg" alt="Unplugged Acoustic Night">
+                    <a href="public/events/unplugged.jpg" class="event-poster"><img class="event-image" src="public/events/unplugged.jpg" alt="Unplugged Acoustic Night"></a>
                     <div class="event-type">Community</div>
                     <h3>Unplugged Acoustic Night</h3>
-                    <div class="event-detail">September 18 Â· 18:00</div>
-                    <div class="event-detail">HatanpÃ¤Ã¤n valtatie 6B, 4th floor, Tampere</div>
+                    <div class="event-detail">September 18 · 18:00</div>
+                    <div class="event-detail">Hatanpään Valtatie 6B, 4th floor, Tampere</div>
                 </div>
                 <div class="event-card">
-                    <img class="event-image" src="public/events/discipleship-meeting.jpg" alt="Discipleship Meeting">
+                    <a href="public/events/discipleship-meeting.jpg" class="event-poster"><img class="event-image" src="public/events/discipleship-meeting.jpg" alt="Discipleship Meeting"></a>
                     <div class="event-type">Discipleship</div>
                     <h3>Discipleship Meeting</h3>
-                    <div class="event-detail">October 12 Â· 10:00</div>
-                    <div class="event-detail">HatanpÃ¤Ã¤n valtatie 6B, 4th floor, Tampere</div>
+                    <div class="event-detail">October 17 · 10:00 AM</div>
+                    <div class="event-detail">Hatanpään Valtatie 6B, 4th floor, Tampere</div>
                 </div>
                 <div class="event-card">
-                    <img class="event-image" src="public/events/new-venue.jpg" alt="We've Moved to Our New Venue">
+                    <a href="public/events/new-venue.jpg" class="event-poster"><img class="event-image" src="public/events/new-venue.jpg" alt="We've Moved to Our New Venue"></a>
                     <div class="event-type">Announcement</div>
                     <h3>We've Moved to Our New Venue</h3>
                     <div class="event-detail">Starting September 20 Â· 13:00 onwards</div>
-                    <div class="event-detail">HatanpÃ¤Ã¤n valtatie 6B, 4th floor, Tampere</div>
+                    <div class="event-detail">Hatanpään Valtatie 6B, 4th floor, Tampere</div>
                 </div>
             </div>
         </div>
@@ -243,8 +242,8 @@
                     <h3>Every Nation Finland</h3>
                     <p>Christ-centered, Spirit-empowered, and socially responsible churches across Finland. We exist to honor God by establishing campus-reaching churches in every city.</p>
                     <div class="social-links">
-                        <a href="https://instagram.com/everynationfinland" target="_blank" rel="noopener noreferrer">Instagram</a>
-                        <a href="https://facebook.com/everynationfinland" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://www.instagram.com/entampere/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.facebook.com/profile.php?id=61566502566762" target="_blank" rel="noopener noreferrer">Facebook</a>
                         <a href="https://youtube.com/everynationfinland" target="_blank" rel="noopener noreferrer">YouTube</a>
                     </div>
                 </div>
@@ -283,6 +282,9 @@
         </div>
     </footer>
 
+    <div id="eventLightbox" class="event-lightbox" hidden>
+        <img id="eventLightboxImage" src="" alt="">
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
