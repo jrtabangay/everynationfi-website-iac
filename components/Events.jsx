@@ -1,4 +1,9 @@
+ 'use client';
+
+import { useState } from 'react';
+
 export default function Events() {
+  const [selectedImage, setSelectedImage] = useState(null);
   const events = [
     { type: 'Community', title: 'Coffee Life Talk', date: 'Every last Saturday of the month · 13:00–16:00', location: 'Kissanmaankatu 20B, Common Room', image: '/events/coffee-life-talk.jpg' },
     { type: 'Prayer', title: 'Online Prayer Meeting', date: 'Every Saturday · 17:00–18:00', location: 'Online · Google Meet link will be shared', image: '/events/prayer-meeting.jpg' },
@@ -17,9 +22,9 @@ export default function Events() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {events.map((event) => (
             <div key={event.title} className="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
-              <a href={event.image} aria-label={`Open full image for ${event.title}`}>
+              <button type="button" onClick={() => setSelectedImage(event)} className="block w-full text-left" aria-label={`Open full image for ${event.title}`}>
                 <img src={event.image} alt={event.title} className="w-full h-72 object-cover cursor-zoom-in" />
-              </a>
+              </button>
               <div className="p-6">
                 <div className="text-sm font-semibold text-secondary uppercase mb-2">{event.type}</div>
                 <h3 className="text-xl font-bold mb-4 text-primary">{event.title}</h3>
@@ -29,6 +34,11 @@ export default function Events() {
             </div>
           ))}
         </div>
+        {selectedImage && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" onClick={() => setSelectedImage(null)} role="dialog" aria-modal="true" aria-label={selectedImage.title}>
+            <img src={selectedImage.image} alt={selectedImage.title} className="max-h-[90vh] max-w-[90vw] object-contain" onClick={(event) => event.stopPropagation()} />
+          </div>
+        )}
       </div>
     </section>
   );

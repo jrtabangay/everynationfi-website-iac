@@ -39,3 +39,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Event poster lightbox: keep the current page and scroll position visible behind the image.
+const eventLightbox = document.getElementById('eventLightbox');
+const eventLightboxImage = document.getElementById('eventLightboxImage');
+if (eventLightbox && eventLightboxImage) {
+    document.querySelectorAll('.event-poster').forEach(poster => {
+        poster.addEventListener('click', (e) => {
+            e.preventDefault();
+            eventLightboxImage.src = poster.href;
+            eventLightboxImage.alt = poster.querySelector('img').alt;
+            eventLightbox.hidden = false;
+        });
+    });
+    eventLightbox.addEventListener('click', () => {
+        eventLightbox.hidden = true;
+        eventLightboxImage.src = '';
+    });
+}

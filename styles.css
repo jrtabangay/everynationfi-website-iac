@@ -816,3 +816,7 @@ h3,
 }
 
 .event-image { width: 100%; object-fit: cover; }
+
+.event-poster { display: block; cursor: zoom-in; }
+.event-lightbox { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 1rem; background: rgba(0, 0, 0, 0.8); cursor: zoom-out; }
+.event-lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
