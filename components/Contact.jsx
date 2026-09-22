@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 
 export default function Contact() {
@@ -20,7 +22,6 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Reset form
     setFormData({
       firstName: '',
       lastName: '',
@@ -37,30 +38,27 @@ export default function Contact() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">We'd Love to Hear From You</h2>
           <p className="text-xl text-gray-600">
-            Whether you have questions about our churches, want to get involved, or are looking for a community in your city, we are here for you.
+            Whether you have questions about our church, want to get involved, or are looking for a community in Tampere, we are here for you.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-white rounded-lg p-8 text-center shadow-md">
-            <div className="text-4xl mb-4">✉️</div>
             <h3 className="text-lg font-bold mb-2">Email</h3>
-            <a href="mailto:info@everynation.fi" className="text-secondary hover:text-orange-600 transition">
-              info@everynation.fi
+            <a href="mailto:vince.bitana@everynation.fi" className="text-secondary hover:text-orange-600 transition">
+              vince.bitana@everynation.fi
             </a>
           </div>
           <div className="bg-white rounded-lg p-8 text-center shadow-md">
-            <div className="text-4xl mb-4">📞</div>
             <h3 className="text-lg font-bold mb-2">Phone</h3>
-            <a href="tel:+358401234567" className="text-secondary hover:text-orange-600 transition">
-              +358 40 123 4567
+            <a href="tel:+358505123876" className="text-secondary hover:text-orange-600 transition">
+              +358 50 512 3876
             </a>
           </div>
           <div className="bg-white rounded-lg p-8 text-center shadow-md">
-            <div className="text-4xl mb-4">📍</div>
             <h3 className="text-lg font-bold mb-2">Visit Us</h3>
             <p className="text-gray-600">
-              Find a church near you in any of our 12 cities
+              Connect with Every Nation Tampere
             </p>
           </div>
         </div>
@@ -107,17 +105,6 @@ export default function Contact() {
               >
                 <option value="">Select Your City</option>
                 <option value="Tampere">Every Nation Tampere</option>
-                <option value="Helsinki">Every Nation Helsinki</option>
-                <option value="Turku">Every Nation Turku</option>
-                <option value="Oulu">Every Nation Oulu</option>
-                <option value="Jyväskylä">Every Nation Jyväskylä</option>
-                <option value="Lahti">Every Nation Lahti</option>
-                <option value="Espoo">Every Nation Espoo</option>
-                <option value="Vantaa">Every Nation Vantaa</option>
-                <option value="Kuopio">Every Nation Kuopio</option>
-                <option value="Joensuu">Every Nation Joensuu</option>
-                <option value="Vaasa">Every Nation Vaasa</option>
-                <option value="Rovaniemi">Every Nation Rovaniemi</option>
               </select>
             </div>
             <div className="mb-6">

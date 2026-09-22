@@ -23,7 +23,7 @@ export default function About() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">A Church for Every Nation</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Since 2018, Every Nation missionaries and church planters have answered the call to bring the gospel to campuses and cities across Finland.
+            Since 2024, Every Nation missionaries and church planters have answered the call to bring the gospel to campuses and cities across Finland.
           </p>
         </div>
 

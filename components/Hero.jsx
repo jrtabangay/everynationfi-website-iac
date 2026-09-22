@@ -32,20 +32,20 @@ export default function Hero() {
 
       {/* Stats */}
       <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
-        <div className="text-center">
+        <div className="hidden text-center">
           <div className="text-4xl font-bold text-secondary mb-2">12</div>
           <div className="text-gray-300">Cities in Finland</div>
         </div>
-        <div className="text-center">
+        <div className="hidden text-center">
           <div className="text-4xl font-bold text-secondary mb-2">3000+</div>
           <div className="text-gray-300">Community Members</div>
         </div>
-        <div className="text-center">
+        <div className="hidden text-center">
           <div className="text-4xl font-bold text-secondary mb-2">15+</div>
           <div className="text-gray-300">University Campuses</div>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold text-secondary mb-2">Since 2018</div>
+          <div className="text-4xl font-bold text-secondary mb-2">Since 2024</div>
           <div className="text-gray-300">Serving Finland</div>
         </div>
       </div>
