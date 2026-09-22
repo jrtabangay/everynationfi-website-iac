@@ -17,7 +17,7 @@ NEXT_PUBLIC_PHONE=+358 40 123 4567
 
 # Social Media
 NEXT_PUBLIC_INSTAGRAM_URL=https://instagram.com/everynationfinland
-NEXT_PUBLIC_FACEBOOK_URL=https://facebook.com/everynationfinland
+NEXT_PUBLIC_FACEBOOK_URL=https://www.facebook.com/profile.php?id=61566502566762
 NEXT_PUBLIC_YOUTUBE_URL=https://youtube.com/everynationfinland
 
 # Email Configuration (optional - for contact form)

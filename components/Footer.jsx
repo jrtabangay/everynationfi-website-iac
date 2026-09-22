@@ -14,7 +14,7 @@ export default function Footer() {
               <a href="https://instagram.com/everynationfinland" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition">
                 Instagram
               </a>
-              <a href="https://facebook.com/everynationfinland" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition">
+              <a href="https://www.facebook.com/profile.php?id=61566502566762" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition">
                 Facebook
               </a>
               <a href="https://youtube.com/everynationfinland" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition">
