@@ -16,7 +16,7 @@ NEXT_PUBLIC_CONTACT_EMAIL=info@everynation.fi
 NEXT_PUBLIC_PHONE=+358 40 123 4567
 
 # Social Media
-NEXT_PUBLIC_INSTAGRAM_URL=https://instagram.com/everynationfinland
+NEXT_PUBLIC_INSTAGRAM_URL=https://www.instagram.com/entampere/
 NEXT_PUBLIC_FACEBOOK_URL=https://www.facebook.com/profile.php?id=61566502566762
 NEXT_PUBLIC_YOUTUBE_URL=https://youtube.com/everynationfinland
 

@@ -11,7 +11,7 @@ export default function Footer() {
               Christ-centered, Spirit-empowered, and socially responsible churches across Finland. We exist to honor God by establishing campus-reaching churches in every city.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="https://instagram.com/everynationfinland" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition">
+              <a href="https://www.instagram.com/entampere/" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition">
                 Instagram
               </a>
               <a href="https://www.facebook.com/profile.php?id=61566502566762" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition">
