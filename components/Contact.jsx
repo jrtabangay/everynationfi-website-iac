@@ -45,8 +45,8 @@ export default function Contact() {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-white rounded-lg p-8 text-center shadow-md">
             <h3 className="text-lg font-bold mb-2">Email</h3>
-            <a href="mailto:vince.bitana@everynation.fi" className="text-secondary hover:text-primary transition">
-              vince.bitana@everynation.fi
+            <a href="mailto:info@everynation.fi" className="text-secondary hover:text-primary transition">
+              info@everynation.fi
             </a>
           </div>
           <div className="bg-white rounded-lg p-8 text-center shadow-md">

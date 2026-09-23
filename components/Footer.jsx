@@ -35,8 +35,8 @@ export default function Footer() {
             <div className="space-y-4 text-sm text-gray-300">
               <div>
                 <div className="font-semibold text-white mb-1">Email</div>
-                <a href="mailto:vince.bitana@everynation.fi" className="hover:text-secondary transition">
-                  vince.bitana@everynation.fi
+                <a href="mailto:info@everynation.fi" className="hover:text-secondary transition">
+                  info@everynation.fi
                 </a>
               </div>
               <div>
