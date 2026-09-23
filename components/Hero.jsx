@@ -20,10 +20,11 @@ export default function Hero() {
             </div>
           </div>
           <div className="hidden md:block">
-            <div className="bg-secondary rounded-lg h-96 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl font-bold mb-4">Every Nation</div>
-                <div className="text-2xl">Every Nation Finland RY</div>
+            <div className="relative overflow-hidden bg-black rounded-lg h-96 flex items-center justify-center shadow-lg">
+              <img src="/branding/tampere-city.jpg" alt="Tampere city view" className="absolute inset-0 w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-black/45" />
+              <div className="relative text-center">
+                <img src="/branding/entlogo.webp" alt="Every Nation Tampere" className="w-48 h-48 rounded-full object-cover mx-auto" />
               </div>
             </div>
           </div>

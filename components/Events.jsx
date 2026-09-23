@@ -6,7 +6,7 @@ export default function Events() {
   const [selectedImage, setSelectedImage] = useState(null);
   const events = [
     { type: 'Community', title: 'Coffee Life Talk', date: 'Every last Saturday of the month · 13:00–16:00', location: 'Kissanmaankatu 20B, Common Room', image: '/events/coffee-life-talk.jpg' },
-    { type: 'Prayer', title: 'Online Prayer Meeting', date: 'Every Saturday · 17:00–18:00', location: 'Online · Google Meet link will be shared', image: '/events/prayer-meeting.jpg' },
+    { type: 'Prayer', title: 'Online Prayer Meeting', date: 'Every Saturday', location: 'Online via Google Meet', image: '/events/prayer-meeting.jpg' },
     { type: 'Community', title: 'Unplugged Acoustic Night', date: 'September 18 · 18:00', location: 'Hatanpään Valtatie 6B, 4th floor, Tampere', image: '/events/unplugged.jpg' },
     { type: 'Discipleship', title: 'Discipleship Meeting', date: 'October 17 · 10:00 AM', location: 'Hatanpään Valtatie 6B, 4th floor, Tampere', image: '/events/discipleship-meeting.jpg' },
     { type: 'Announcement', title: "We've Moved to Our New Venue", date: 'Starting September 20 · 13:00 onwards', location: 'Hatanpään Valtatie 6B, 4th floor, Tampere', image: '/events/new-venue.jpg' }
