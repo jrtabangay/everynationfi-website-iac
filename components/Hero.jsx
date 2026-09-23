@@ -24,7 +24,7 @@ export default function Hero() {
               <img src="/branding/tampere-city.jpg" alt="Tampere city view" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-black/45" />
               <div className="relative text-center">
-                <img src="/branding/entlogo.webp" alt="Every Nation Tampere" className="w-48 h-48 rounded-full object-cover mx-auto" />
+                <img src="/branding/entlogo-transparent.png" alt="Every Nation Tampere" className="w-64 h-auto mx-auto" />
               </div>
             </div>
           </div>
