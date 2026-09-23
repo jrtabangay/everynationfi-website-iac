@@ -17,9 +17,6 @@ export default function Footer() {
               <a href="https://www.facebook.com/profile.php?id=61566502566762" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition">
                 Facebook
               </a>
-              <a href="https://youtube.com/everynationfinland" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition">
-                YouTube
-              </a>
             </div>
           </div>
 
