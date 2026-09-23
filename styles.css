@@ -845,5 +845,5 @@ h3,
     .nav-content { gap: 0.5rem; }
     .logo { flex: 1 1 auto; overflow: hidden; }
     .logo span { font-size: 0.9rem; overflow: hidden; text-overflow: ellipsis; }
-    .menu-toggle { flex: 0 0 auto; font-size: 1rem; line-height: 1; padding: 0.5rem 0.65rem; }
+    .menu-toggle { flex: 0 0 auto; width: 2.5rem; height: 2.5rem; font-size: 1.25rem !important; line-height: 1; padding: 0; }
 }
