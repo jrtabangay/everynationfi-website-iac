@@ -833,6 +833,7 @@ h3,
 .logo span { white-space: nowrap; }
 .logo img { width: 2.75rem; height: 2.75rem; border-radius: 50%; object-fit: cover; }
 .hero-logo { width: 12rem; height: 12rem; border-radius: 50%; object-fit: cover; }
+.hero-logo-transparent { width: 16rem; height: auto; border-radius: 0; object-fit: contain; }
 
 .event-poster { display: block; cursor: zoom-in; }
 .event-lightbox { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 1rem; background: rgba(0, 0, 0, 0.8); cursor: zoom-out; }
