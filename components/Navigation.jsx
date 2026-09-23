@@ -11,9 +11,9 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center bg-white">
               <img src="/branding/entlogo.webp" alt="Every Nation Tampere" className="h-12 w-12 rounded-full object-cover" />
-              <span className="ml-3 text-lg font-bold text-primary">Every Nation Finland RY</span>
+              <span className="ml-3 text-lg font-extrabold text-black whitespace-nowrap">Every Nation Finland RY</span>
             </Link>
           </div>
 
