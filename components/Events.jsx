@@ -9,7 +9,7 @@ export default function Events() {
     { type: 'Prayer', title: 'Online Prayer Meeting', date: 'Every Saturday', location: 'Online via Google Meet', image: '/events/prayer-meeting.jpg' },
     { type: 'Community', title: 'Unplugged Acoustic Night', date: 'September 18 - 18:00', location: 'Hatanpaan Valtatie 6B, 4th floor, Tampere', image: '/events/unplugged.jpg' },
     { type: 'Discipleship', title: 'Discipleship Meeting', date: 'October 17 - 10:00 AM', location: 'Hatanpaan Valtatie 6B, 4th floor, Tampere', image: '/events/discipleship-meeting.jpg' },
-    { type: 'Announcement', title: "We've Moved to Our New Venue", date: 'Starting September 20 - 13:00 onwards', location: 'Hatanpaan Valtatie 6B, 4th floor, Tampere', image: '/events/new-venue.jpg' },
+    { type: 'Announcement', title: "We've Moved to Our New Venue", date: 'September 20 13:00 onwards', location: 'Hatanpaan Valtatie 6B, 4th floor, Tampere', image: '/events/new-venue.jpg' },
     { type: 'Special Event', title: "God's Word. Our Lives. His Mission.", date: 'October 18 - 10:00 AM', location: 'Cafeteria Teopolis, Sairaalankatu 5 7, 33100 Tampere', image: '/events/god-word-our-lives.jpg' }
   ];
 
