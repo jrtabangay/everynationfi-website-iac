@@ -829,7 +829,8 @@ h3,
 
 .event-image { width: 100%; height: 18rem; object-fit: cover; display: block; }
 
-.logo { display: flex; align-items: center; gap: 0.75rem; color: #ffffff; background: #000000; font-weight: 800; }
+.logo { display: flex; align-items: center; gap: 0.75rem; color: #ffffff; background: #000000; font-weight: 800; min-width: 0; }
+.logo span { white-space: nowrap; }
 .logo img { width: 2.75rem; height: 2.75rem; border-radius: 50%; object-fit: cover; }
 .hero-logo { width: 12rem; height: 12rem; border-radius: 50%; object-fit: cover; }
 
@@ -837,3 +838,8 @@ h3,
 .event-lightbox { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 1rem; background: rgba(0, 0, 0, 0.8); cursor: zoom-out; }
 .event-lightbox[hidden] { display: none; }
 .event-lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
+
+@media (max-width: 768px) {
+    .logo { font-size: 1rem; gap: 0.4rem; }
+    .logo img { width: 2.25rem; height: 2.25rem; }
+}
